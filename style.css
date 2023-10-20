@@ -48,12 +48,24 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 140px 50px 50px 50px 50px 50px;
-    z-index: 2;
+    z-index: 3;
     background-color: white;
-    box-shadow: -2px 2px 2px hsl(233, 8%, 79%, 20%);
+    overflow: hidden;
 
     animation-name: menuanimation;
     animation-duration: 1s;
+}
+
+.grey {
+    display: none;
+    background-color: hsl(236, 13%, 42%, 40%);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @keyframes menuanimation {
